@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="DesktopBrowsers" parallel="tests">
+
+        <test name="Win10 - Chrome">
+            <parameter name="browser" value="Chrome"/>
+            <parameter name="version" value="88.0"/>
+            <parameter name="platform" value="Windows 10"/>
+            <parameter name="resolution" value="1920x1080"/>
+            <classes>
+                <class name="apitestingsample"/>
+            </classes>
+        </test>
+<!--        <test name="Win10 - Firefox">-->
+<!--            <parameter name="browser" value="Firefox"/>-->
+<!--            <parameter name="version" value="84.0"/>-->
+<!--            <parameter name="platform" value="Win10"/>-->
+<!--            <parameter name="resolution" value="1920x1080"/>-->
+<!--            <classes>-->
+<!--                <class name="apitestingsample"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+<!--        <test name="Win10 - Edge">-->
+<!--            <parameter name="browser" value="MicrosoftEdge"/>-->
+<!--            <parameter name="version" value="87.0"/>-->
+<!--            <parameter name="platform" value="Win10"/>-->
+<!--            <parameter name="resolution" value="1920x1080"/>-->
+<!--            <classes>-->
+<!--                <class name="apitestingsample"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+<!--    &lt;!&ndash;Mac Mojave&ndash;&gt;-->
+<!--        <test name="Mac - Mojave - Safari">-->
+<!--            <parameter name="browser" value="Safari"/>-->
+<!--            <parameter name="version" value="12.0"/>-->
+<!--            <parameter name="platform" value="Macos Mojave"/>-->
+<!--            <parameter name="resolution" value="1920x1080"/>-->
+<!--            <classes>-->
+<!--                <class name="apitestingsample"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+<!--        <test name="Mac - Mojave - Chrome">-->
+<!--            <parameter name="browser" value="Chrome"/>-->
+<!--            <parameter name="version" value="87.0"/>-->
+<!--            <parameter name="platform" value="Macos Mojave"/>-->
+<!--            <parameter name="resolution" value="1920x1080"/>-->
+<!--            <classes>-->
+<!--                <class name="apitestingsample"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+</suite>
